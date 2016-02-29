@@ -3,6 +3,7 @@ library(shiny)
 library(datasets)
 data(mtcars)
 
+# Function that calculates and returns the linear model
 getLM <- function(vars) {
   
   if ( is.null(vars) ) {

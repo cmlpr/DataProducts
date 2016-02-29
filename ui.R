@@ -37,6 +37,7 @@ shinyUI(fluidPage(
                               selected = 1)
            ),
     
+    # Column where we show the selected variables
     column(3, 
            h4("Selected Variables"),
            verbatimTextOutput("value")
@@ -46,6 +47,7 @@ shinyUI(fluidPage(
   
   hr(),
   
+  # Display the linear model
   fluidRow(
     column(10, 
            h3("Summary of the Linear Model"),
@@ -55,6 +57,7 @@ shinyUI(fluidPage(
   
   hr(),
   
+  # Display the diagnostic plots
   fluidRow(
     column(10, 
            h3("Linear model diagnostic plots"),
