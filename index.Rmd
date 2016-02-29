@@ -29,6 +29,14 @@ knit        : slidify::knit2slides
 
 ---
 
+## Linear Regression Example with mtcars dataset
+
+```{r}
+library(datasets); data(mtcars); fit <- lm(mpg ~ cyl, data = mtcars)
+summary(fit)
+```
+
+---
 
 ## Using the tool
 

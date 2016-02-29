@@ -74,6 +74,39 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
+    <h2>Linear Regression Example with mtcars dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(datasets); data(mtcars); fit &lt;- lm(mpg ~ cyl, data = mtcars)
+summary(fit)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ cyl, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.9814 -2.1185  0.2217  1.0717  7.5186 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.8846     2.0738   18.27  &lt; 2e-16 ***
+## cyl          -2.8758     0.3224   -8.92 6.11e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.206 on 30 degrees of freedom
+## Multiple R-squared:  0.7262, Adjusted R-squared:  0.7171 
+## F-statistic: 79.56 on 1 and 30 DF,  p-value: 6.113e-10
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
     <h2>Using the tool</h2>
   </hgroup>
   <article data-timings="">
@@ -89,7 +122,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Possible Future Improvements</h2>
   </hgroup>
@@ -107,7 +140,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-6" style="background:;">
   <hgroup>
     <h2>Thank you!</h2>
   </hgroup>
@@ -136,20 +169,26 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Using the tool'>
+        data-slide=3 title='Linear Regression Example with mtcars dataset'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Possible Future Improvements'>
+        data-slide=4 title='Using the tool'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Thank you!'>
+        data-slide=5 title='Possible Future Improvements'>
          5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Thank you!'>
+         6
       </a>
     </li>
   </ul>
